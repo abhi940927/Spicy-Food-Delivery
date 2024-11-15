@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery Service</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-pepper-hot"></i> Spicy Food</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#menu"><i class="fas fa-utensils"></i> Menu</a></li>
+                    <li><a href="#about"><i class="fas fa-info-circle"></i> About Us</a></li>
+                    <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <marquee behavior="scroll" direction="left" scrollamount="5" style="background-color: papayawhip; color: black; padding: 10px;">
+        "Fresh, Hot, and Fast - Order Your Meal Today!" <span>"Buy 1 get 1 free"</span>
+    </marquee>
+    
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="home-content">
+            <h2><i class="fas fa-motorcycle"></i> Delicious Food, Delivered Fast!</h2>
+            <p><iEnjoy a wide variety of dishes delivered straight to your door. Fresh, hot, and fast!></iEnjoy></p>
+            <a href="#menu" class="btn"><i class="fas fa-shopping-cart"></i> Order Now</a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <h2>🍽️ Our Menu</h2>
+        <div class="menu-container">
+            <div class="menu-item" data-price="60">
+                <h3>🥘 Litti Chokha</h3>
+                <img src="Liitti_225x225.jpeg" alt="Litti Chokha Image" style="width: 100%; border-radius: 5px; margin-bottom: 10px;">
+                <p>Traditional Bihari dish served with roasted litti and mashed chokha.</p>
+                <button class="add-to-cart">Add to Cart - ₹60</button>
+            </div>
+            <div class="menu-item" data-price="80">
+                <h3>🍕 Pizza</h3>
+                <img src="pizza_190x225_225x266.jpeg" alt="Pizza" class="food-image">
+                <p>Hot and cheesy with fresh toppings.</p>
+                <button class="add-to-cart">Add to Cart - ₹80</button>
+            </div>
+            <div class="menu-item" data-price="50">
+                <h3>🍔 Burgers</h3>
+                <img src="burger_225x225.jpeg" alt="Burgers" class="food-image">
+                <p>Juicy burgers with a variety of flavors.</p>
+                <button class="add-to-cart">Add to Cart - ₹50</button>
+            </div>
+            <div class="menu-item" data-price="70">
+                <h3>🌯 Chicken Roll</h3>
+                <img src="chicken roll.jfif" alt="Chicken Roll Image" style="width: 100%; border-radius: 5px; margin-bottom: 10px;">
+                <p>Spicy and juicy chicken wrapped in a soft roll, perfect for a quick bite.</p>
+                <button class="add-to-cart">Add to Cart - ₹70</button>
+            </div>            
+            <div class="menu-item" data-price="70">
+                <h3>🍝 Pasta</h3>
+                <img src="pasta2.jfif" alt="Pasta" class="food-image">
+                <p>Delicious pasta with rich sauces.</p>
+                <button class="add-to-cart">Add to Cart - ₹70</button>
+            </div>
+            <div class="menu-item" data-price="20">
+                <h3>🥟 Samosa</h3>
+                <img src="samosa.jfif" alt="Samosa Image" style="width: 100%; border-radius: 5px; margin-bottom: 10px;">
+                <p>Classic Indian snack filled with spiced potatoes and peas.</p>
+                <button class="add-to-cart">Add to Cart - ₹20</button>
+            </div>
+            <div class="menu-item" data-price="100">
+                <h3>🍣 Sushi</h3>
+                <img src="shushi2.jfif" alt="Sushi" class="food-image">
+                <p>Fresh and authentic Japanese sushi.</p>
+                <button class="add-to-cart">Add to Cart - ₹100</button>
+            </div>
+            <div class="menu-item" data-price="40">
+                <h3>🥟 Momos</h3>
+                <img src="pngtree-delicious-momos-_225x225.png" alt="Momos" class="food-image">
+                <p>Steamed or fried dumplings with savory fillings.</p>
+                <button class="add-to-cart">Add to Cart - ₹40</button>
+            </div>
+            <div class="menu-item" data-price="60">
+                <h3>🍜 Ramen</h3>
+                <img src="Ramen_225x225.jpeg" alt="Ramen" class="food-image">
+                <p>Savory broth with fresh noodles and vegetables.</p>
+                <button class="add-to-cart">Add to Cart - ₹60</button>
+            </div>
+            <div class="menu-item" data-price="50">
+                <h3>🥗 Salad</h3>
+                <img src="salad1.jfif" alt="Salad" class="food-image">
+                <p>Crisp, healthy, and refreshing options.</p>
+                <button class="add-to-cart">Add to Cart - ₹50</button>
+            </div>
+            <div class="menu-item" data-price="30">
+                <h3>🍟 Fries</h3>
+                <img src="fries.jfif" alt="Fries" class="food-image">
+                <p>Golden and crispy french fries.</p>
+                <button class="add-to-cart">Add to Cart - ₹30</button>
+            </div>
+            <div class="menu-item" data-price="150">
+                <h3>🍛 Indian Thali</h3>
+                <img src="thali2.jfif" alt="Indian Thali Image" style="width: 100%; border-radius: 5px; margin-bottom: 10px;">
+                <p>A complete meal with a variety of dishes served on one plate.</p>
+                <button class="add-to-cart">Add to Cart - ₹150</button>
+            </div>
+            <div class="menu-item" data-price="120">
+                <h3>🧀 Paneer Butter Masala with Naan</h3>
+                <img src="panner3.jfif" alt="Paneer Butter Masala Image" style="width: 100%; border-radius: 5px; margin-bottom: 10px;">
+                <p>Rich and creamy paneer curry served with fluffy naan.</p>
+                <button class="add-to-cart">Add to Cart - ₹120</button>
+            </div>            
+            <div class="menu-item" data-price="40">
+                <h3>🍩 Desserts</h3>
+                <img src="desserts.jfif" alt="Desserts" class="food-image">
+                <p>Sweet treats to finish your meal.</p>
+                <button class="add-to-cart">Add to Cart - ₹40</button>
+            </div>
+            <div class="menu-item" data-price="20">
+                <h3>🥤 Beverages</h3>
+                <img src="drink2.jpg" alt="Beverages" class="food-image">
+                <p>A variety of cold drinks to quench your thirst.</p>
+                <button class="add-to-cart">Add to Cart - ₹20</button>
+            </div>
+
+        </div>
+        <div id="cart-summary">
+            <h3>Cart Summary</h3>
+            <p>Total: ₹<span id="total-price">0</span></p>
+            <button id="checkout">Checkout</button>
+        </div>
+    </section>
+
+    
+    
+    <!-- About Us Section -->
+    <section id="about">
+        <h2><i class="fas fa-users"></i> About Us</h2>
+        <p><i class="fas fa-hand-holding-heart"></i> SpicyFood is a food delivery service dedicated to bringing your favorite dishes directly to your doorstep, ensuring quality, speed, and deliciousness in every order.</p>
+    </section>
+    <!-- Video Section -->
+    <section id="promo-video">
+        <h2><i class="fas fa-video"></i> Watch Our Promo Video</h2>
+        <div class="video-container">
+            <video controls width="600">
+                <source src="Spicy food.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <p>Experience the taste of our dishes through our promotional video!</p>
+    </section>
+    <!-- Reference Button Section -->
+    <section id="reference">
+        <h2><i class="fas fa-book"></i> Reference Page</h2>
+        <p>Learn more about our food delivery process and quality standards.</p>
+        <!-- Button styled as link to open reference page -->
+        <a href="reference-page.html" class="btn" target="_blank">
+            <i class="fas fa-arrow-right"></i> Visit Reference Page
+        </a>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2><i class="fas fa-envelope-open-text"></i> Contact Us</h2>
+        <form action="#">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit"><i class="fas fa-paper-plane"></i> Send</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 FoodFast. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://x.com/ABHINAV78339768" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/abhi_sanatani22/profilecard/?igsh=dTRmaTN1OWtyd2Vv" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/abhinav-singh-124791322?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
